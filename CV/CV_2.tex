@@ -1,0 +1,317 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Classicthesis-Styled CV
+% LaTeX Template
+% Version 1.0 (22/2/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{scrartcl}
+\date{}
+\reversemarginpar % Move the margin to the left of the page 
+
+\newcommand{\MarginText}[1]{\marginpar{\raggedleft\itshape\small#1}} % New command defining the margin text style
+
+\usepackage[nochapters]{classicthesis} % Use the classicthesis style for the style of the document
+\usepackage[LabelsAligned]{currvita} % Use the currvita style for the layout of the document
+\usepackage{ marvosym }
+\renewcommand{\cvheadingfont}{\LARGE\color{Maroon}} % Font color of your name at the top
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\hypersetup{colorlinks, breaklinks, urlcolor=Maroon, linkcolor=Maroon} % Set link colors
+
+\newlength{\Adatebox}\settowidth{\Adatebox}{address} % Set the width of the date box in each block
+\newlength{\datebox}\settowidth{\datebox}{graduate student researcher forever love yes} % Set the width of the date box in each block
+
+\newcommand{\ANewEntry}[3]{\noindent\hangindent=2em\hangafter=0 \parbox{\Adatebox}{\small \textit{#1}}\hspace{1.5em} #2 #3 % Define a command for each new block - change spacing and font sizes here: #1 is the left margin, #2 is the italic date field and #3 is the position/employer/location field
+\vspace{0.5em}} % Add some white space after each new entry
+
+\newcommand{\NewEntry}[3]{\noindent\hangindent=2em\hangafter=0 \parbox{\datebox}{#1}\vspace{0.3 em}  \newline \noindent\hangindent=2em\hangafter=0  #2 #3 % Define a command for each new block - change spacing and font sizes here: #1 is the left margin, #2 is the italic date field and #3 is the position/employer/location field
+\vspace{0.5em}} % Add some white space after each new entry
+
+\newcommand{\EduNewEntry}[1]{\noindent\hangindent=2em\hangafter=0 \parbox{\datebox}{#1}\vspace{0.3em}} % Add some white space after each new entry
+
+\newcommand{\Description}[1]{\noindent\hangindent=2.2em\hangafter=0\noindent\raggedright\footnotesize{#1}\par\normalsize\vspace{1em}} % Define a command for descriptions of each entry - change spacing and font sizes here
+\newcommand{\eduDescription}[1]{\noindent\hangindent=2em\hangafter=0\noindent\raggedright\footnotesize{#1}\par\normalsize\vspace{1em}} % Define a command for descriptions of each entry - change spacing and font sizes here
+%----------------------------------------------------------------------------------------
+
+
+
+
+
+\begin{document}
+
+\thispagestyle{empty} % Stop the page count at the bottom of the first page
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{cv}{\spacedallcaps{Amanda D. Faig}}\vspace{1.5em} % Your name
+
+\noindent\spacedlowsmallcaps{Personal Information}\vspace{1em} % Personal information heading
+
+\ANewEntry{address}{1105 4th St}{Davis, CA 95616} % Address
+
+\ANewEntry{email}{\href{mailto:afaig@ucdavis.edu}{afaig@ucdavis.edu}} % Email address
+
+%\NewEntry{website}{\href{http://www.johnsmith.com}{http://www.johnsmith.com}} % Personal website
+
+\ANewEntry{phone}{(530) 848 0938} % Phone number(s)
+
+\vspace{1em} % Extra white space between the personal information section and goal
+
+%\noindent\spacedlowsmallcaps{Field of Interest}\vspace{1em} % Goal heading, could be used for a quotation or short profile instead
+
+%\Description{Natural Resource Economics, Environmental Economics}\vspace{1em} % Goal text
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\noindent \spacedlowsmallcaps{Education}\vspace{1em}
+
+\EduNewEntry{Advanced to Candidacy}
+
+\eduDescription{\MarginText{September 2013}University of California, Davis\newline Department of Agricultural and Resource Economics \newline 
+Dissertation: \textit{Contemporary Issues in Fishery Economics}\newline
+Committee: Prof.~James {Wilen} (Chair), Prof.~James {Sanchirico}, Prof.~Marissa {Baskett}, \& Prof.~Michael {Springborn} \newline
+Field: Natural Resource and Environmental Economics}
+
+%------------------------------------------------
+
+\EduNewEntry{{Master of Science}}
+
+\eduDescription{\MarginText{September 2012}University of California, Davis\newline Department of Agricultural and Resource Economics\ \ $\cdotp$\ \ GPA: 3.9}
+
+%------------------------------------------------
+\EduNewEntry{{Bachelor of Science}}
+
+\eduDescription{\MarginText{November 2010}University of Toronto \newline Economics Major\ \ $\cdotp$\ \ GPA: 3.7\newline Graduated with Honors and High Distinction}
+
+%------------------------------------------------
+\EduNewEntry{Bachelor of Science}
+
+\eduDescription{\MarginText{May 2010}University of Toronto \newline Evolutionary Biology Specialist\ \ $\cdotp$\ \ GPA: 3.7}
+
+%------------------------------------------------
+
+\vspace{1em} % Extra space between major sections
+%----------------------------------------------------------------------------------------
+%     PAPERS
+%----------------------------------------------------------------------------------------
+
+\noindent\spacedlowsmallcaps{Work in Progress}\vspace{1em}
+
+The Economic Implications of Ignoring Fisheries Induced Evolution (with James N. Sanchirico, James E. Wilen, and Marissa L. Baskett)\\[10pt]
+Salmon Portfolio (with Mike R. Springborn)
+
+\vspace{2em} % Extra space between major sections
+
+%----------------------------------------------------------------------------------------
+%     RESEARCH EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\noindent\spacedlowsmallcaps{Research Experience}\vspace{1em}
+
+\NewEntry{Graduate Student Researcher}{\small Prof. Michael Springborn --- University of California, Davis}
+
+\Description{\MarginText{Summer 2014 to Present}I am working with a team of economists and ecologists on a bio-economic project to examine how multiple anthropogenic activities interact with the ability of complex ecological systems to respond to environmental variation and change. I am currently building a Forward Dynamic Program to help us deal with the multiple stocks, control variables, and sources of stochasticity that we must consider.}
+
+%------------------------------------------------
+\NewEntry{Graduate Student Researcher}{\small Prof. Rachael Goodhue --- University of California, Davis}
+
+\Description{\MarginText{Fall 2012 to \qquad Fall 2013}Assisted with research for the California Department of Food and Agriculture to determine the economic impacts of the California Department of Pesticide Regulation Chloropicrin Mitigation Proposal issued May 15, 2013 on the California strawberry industry. }
+
+%------------------------------------------------
+
+\NewEntry{Undergraduate Research Assistant}{\small Prof. Spencer Barrett  --- University of Toronto}
+
+\Description{\MarginText{Summer 2009}Managed a greenhouse experiment and assisted a field experiment on \textit{Lythrum salicaria}. I also managed a team of volunteers, gathered journal articles and highlighted relevant information for graduate students, and input data to excel}
+
+%------------------------------------------------
+\vspace{1em} % Extra space between major sections
+
+%----------------------------------------------------------------------------------------
+%     TEACHING EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\noindent\spacedlowsmallcaps{Teaching Experience}\vspace{1em}
+
+\NewEntry{{Associate Instructor}}{\small Resource and Environmental Policy Analysis}
+
+\Description{\MarginText{Winter 2014}Prepared and delivered 3 hours of lecture per week, held 3 hours of weekly office hours, and prepared and graded weekly homework, quizzes, the midterm and the final. The goal of this course was to give upper level undergraduate students the tools and practice they need to be able to think about policy in an informed way.}
+
+%------------------------------------------------
+\NewEntry{{Teaching Assistant}}{\small Department of Agricultural and Resource Economics}
+
+\Description{\MarginText{Fall 2012 to \qquad Fall 2013}Developed spreadsheets for risk analysis on exotic derivatives on a wide array of commodities (ags, oils, precious and base metals), managed blotter and secondary trades on structured notes, liaised with Middle Office, Sales and Structuring for bookkeeping. }
+
+%------------------------------------------------
+
+\vspace{1em} % Extra space between major sections
+
+
+
+%----------------------------------------------------------------------------------------
+%     Service
+%----------------------------------------------------------------------------------------
+
+\noindent\spacedlowsmallcaps{Service}\vspace{1em}
+
+\NewEntry{{Co-ordinator}}{\small Environmental and Resource Economics Workshop}
+
+\Description{\MarginText{Fall 2014 to Present}I help the faculty co-ordinator invite speakers to UC Davis and schedule and oversee their transportation, accomodations, meetings, meals, and talks.}
+
+%------------------------------------------------
+\NewEntry{{Committee Chair}}{\small Scott McNiven Community Service Award}
+
+\Description{\MarginText{2014}Established and organized the student committee to create an annual award in honor of our late colleague, Scott McNiven.}
+
+%------------------------------------------------
+\NewEntry{{Committee Member}}{{\small Giannini Library Renovation Committee}}
+
+\Description{\MarginText{2013--2014}Contributed to deciding how to renovate our library into a conference space.}
+
+%------------------------------------------------
+\NewEntry{{President}}{{\small Agricultural and Resource Economics Graduate Student Association}}
+
+\Description{\MarginText{2012--2013}Raised money through grants and fundraising for graduate student activities.  Oversaw multiple events including the annual Faculty-Student Softball Game and BBQ and the annual Christmas Party.  Co-ordinated with the department staff and faculty to organize and execute the multi-day Prospective Student Flyouts and Open House.}
+
+%------------------------------------------------
+
+\vspace{1em} % Extra space between major sections
+
+%----------------------------------------------------------------------------------------
+%	AWARDS
+%----------------------------------------------------------------------------------------
+
+\noindent\spacedlowsmallcaps{Awards}\vspace{1em}
+
+\Description{\MarginText{2011,2012}{Non Resident Tuition Scholarship}\ \ $\cdotp$\ \ University of California, Davis }
+
+%------------------------------------------------
+
+\Description{\MarginText{2007--2010}{Deans List}\ \ $\cdotp$\ \ University of Toronto}
+
+%------------------------------------------------
+
+\Description{\MarginText{2006--2009}{Scholarship for Dependents of Faculty}\ \ $\cdotp$\ \ University of Toronto}
+
+%------------------------------------------------
+
+\Description{\MarginText{2007}{Drew Thompson Scholarship}\ \ $\cdotp$\ \ University of Toronto}
+
+%------------------------------------------------
+
+\Description{\MarginText{2006,2007}{Trinity College Scholarship}\ \ $\cdotp$\ \ University of Toronto}
+
+%------------------------------------------------
+
+\Description{\MarginText{2006}{University of Toronto Scholar Scholarship}\ \ $\cdotp$\ \ University of Toronto}
+
+%------------------------------------------------
+
+\vspace{1em} % Extra space between major sections
+
+%----------------------------------------------------------------------------------------
+%	Presentations and Conferences
+%----------------------------------------------------------------------------------------
+
+\noindent\spacedlowsmallcaps{Presentations, Workshops and Conferences}\vspace{1em}
+
+\Description{\MarginText{2014}\textit{``The economic implications of fishery induced evolution''}\newline Giannini Agricultural and Resource Economics Student Conference\newline University of California, Davis}
+
+%------------------------------------------------
+\Description{\MarginText{2014}\textit{``The economics of fishery induced evolution''}\newline Game Theory Workshop\newline University of California, Davis}
+
+%------------------------------------------------
+
+\Description{\MarginText{2013}Rapid Evolution and Sustainability Workshop\newline The Mathematical Biosciences Institute }
+
+
+
+\vspace{1em} % Extra space between major sections
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS
+%----------------------------------------------------------------------------------------
+
+\noindent\spacedlowsmallcaps{Computer Skills}\vspace{1em}
+
+\Description{\MarginText{Advanced} MatLab, \LaTeX, Microsoft Office Suite, GitHub}
+
+\Description{\MarginText{Intermediate} \textsc{stata}, \textsc{mathematica}, Maple}
+
+\Description{\MarginText{Basic} \textsc{python}, \textsc{html}}
+
+
+%------------------------------------------------
+
+\vspace{1em} % Extra space between major sections
+
+%----------------------------------------------------------------------------------------
+%	Languages
+%----------------------------------------------------------------------------------------
+
+\noindent\spacedlowsmallcaps{Languages}\vspace{1em}
+
+\vspace{1em}
+
+\newlength{\langbox} % Create a new length for the length of languages to keep them equally spaced
+\settowidth{\langbox}{English} % Length equals the length of "English" - if you have a longer language in your list put it here
+
+\Description{\parbox{\langbox}{{English}}\ \ $\cdotp$\ \ \ Native proficiency}
+
+\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+
+\Description{\parbox{\langbox}{{Spanish}}\ \ $\cdotp$\ \ \ Full professional proficiency}
+
+\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+
+\Description{\parbox{\langbox}{{Catalan}}\ \ $\cdotp$\ \ \ Professional working proficiency}
+\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+
+\Description{\parbox{\langbox}{{French}}\ \ $\cdotp$\ \ \ Professional working proficiency}
+
+\vspace{1em} % Extra space between major sections
+
+%----------------------------------------------------------------------------------------
+%	References
+%----------------------------------------------------------------------------------------
+
+\noindent\spacedlowsmallcaps{References}\vspace{1em}
+
+\vspace{1em}
+
+\begin{minipage}[t]{0.5\textwidth}
+\EduNewEntry{Prof.~James E. Wilen, {\it Chair}}
+\Description{Agricultural \& Resource Economics\newline University of California, Davis\newline \Telefon \, (530) 752-6093 \newline  \Letter \, wilen@primal.ucdavis.edu}
+
+\EduNewEntry{Prof.~James N. Sanchirico}
+\Description{Environmental Science \& Policy\newline University of California, Davis\newline  \Telefon \, (530) 754-9883 \newline  \Letter \, jsanchirico@ucdavis.edu}
+\end{minipage}
+\begin{minipage}[t]{0.45\textwidth}
+\EduNewEntry{Prof.~Marissa L. Baskett}
+\Description{Environmental Science \& Policy\newline University of California, Davis\newline  \Telefon \, ASK MARISSA \newline   \Letter \, mlbaskett@ucdavis.edu}
+
+\EduNewEntry{Prof.~Michael R. Springborn}
+\Description{Environmental Science \& Policy\newline University of California, Davis\newline  \Telefon \, (530) 752-5244 \newline  \Letter \, mspringborn@ucdavis.edu}
+\end{minipage}
+
+\vspace{2em}
+{\it Updated Dec 1, 2014}
+\end{cv}
+
+\end{document}
